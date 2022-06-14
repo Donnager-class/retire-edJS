@@ -8,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
       <div class="bkg-body">
         <div class="container has-text-centered">
           
-        <h1 class="title">Home</h1>
+        <h1 class="title">something</h1>
+        <p>
+          in
+          the 
+          way
+          ...
+          hmmmmmmm
+          ...
+          yeah
+
+
+
+
+        </p>
         
       </div>
       </div>

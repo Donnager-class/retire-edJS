@@ -1,10 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+// import { HomeComponent } from './home';
+import { LevelsComponent } from './levels';
+import { SandboxComponent } from './sandbox';
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+const routes: Routes = [
+    // { path: '', component: HomeComponent },
+    { path: 'levels', component: LevelsComponent },
+    { path: 'sandbox', component: SandboxComponent },
+
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
+];
+
+export const appRoutingModule = RouterModule.forRoot(routes);
