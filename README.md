@@ -14,11 +14,11 @@
 
 This is a Angular applications that bends to your will. It has some *weird* app routing methods to no longer make this a SPA. As of now, it, does not have any javascript libraries or makes use of anything external(With the exception of bootstrap being included within the application). It has a few pages with minimal code examples. 
 
-Angular and node module folders are missing, which will not allow the application to run. These folders hold the dependencies of the applications. 
+Angular and node module folders are removed, which will not allow the application to run. These folders hold the dependencies of the applications. 
 
 ---
 
-# Why is this a Things? Why are dependencies missing?
+# Why is this a Thing? Why are dependencies missing?
 
 With this applications essentially *naked*, what can be done? Well, anything you choose I guess. I made it to test outdated JavaScript Library vulnerbilities and to do so you need to interchange between alot of JS libraries and other software versions.
 
